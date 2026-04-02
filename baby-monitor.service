@@ -1,0 +1,14 @@
+[Unit]
+Description=Baby Monitor Cry Detection
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/pi/baby_monitor/cry_detection.py
+Restart=always
+User=pi
+Environment=SENDER_EMAIL=your_email@gmail.com
+Environment=RECEIVER_EMAIL=parent_email@gmail.com
+Environment=EMAIL_PASSWORD=your_app_password
+
+[Install]
+WantedBy=multi-user.target
