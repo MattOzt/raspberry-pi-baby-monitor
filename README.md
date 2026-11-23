@@ -81,7 +81,7 @@ sudo systemctl start baby-monitor
 
 Run `remote_gui.py` on a Windows machine on the same network. Set `PI_HOST`, `PI_USER`, and `PI_PASSWORD` in your `.env`.
 
-## Performance (Raspberry Pi 4B)
+## Performance (Raspberry Pi 4B )
 
 | Scenario | CPU Usage | Memory |
 |----------|-----------|--------|
